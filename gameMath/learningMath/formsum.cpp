@@ -16,7 +16,7 @@ formsum::~formsum()
 
 void formsum::on_pushButton_3_clicked()
 {
-
-
+    MainWindow *f1 = new MainWindow();
+    f1->show();
 }
 
