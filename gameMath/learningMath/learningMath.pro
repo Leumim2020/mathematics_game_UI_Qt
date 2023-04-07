@@ -9,15 +9,24 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    form3.cpp \
+    form4.cpp \
+    form5.cpp \
     formsum.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    form3.h \
+    form4.h \
+    form5.h \
     formsum.h \
     mainwindow.h
 
 FORMS += \
+    form3.ui \
+    form4.ui \
+    form5.ui \
     formsum.ui \
     mainwindow.ui
 
