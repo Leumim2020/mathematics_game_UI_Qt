@@ -26,7 +26,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <string notr="true">background-color:rgb(8, 8, 8);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label_13">
@@ -60,8 +60,11 @@ color: rgb(200, 237, 240);
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(150, 150, 150);
+     <string notr="true">
+color: rgb(200, 237, 240);
 font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+backgroudn-color:rgb(190, 190, 190);
+border:1px solid rgb(200, 237, 240);
 </string>
     </property>
     <property name="text">
@@ -81,8 +84,11 @@ font: 75 10pt &quot;MS Shell Dlg 2&quot;;
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(150, 150, 150);
+     <string notr="true">
+color: rgb(200, 237, 240);
 font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+backgroudn-color:rgb(190, 190, 190);
+border:1px solid rgb(200, 237, 240);
 </string>
     </property>
     <property name="text">
@@ -102,8 +108,11 @@ font: 75 10pt &quot;MS Shell Dlg 2&quot;;
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(150, 150, 150);
+     <string notr="true">
+color: rgb(200, 237, 240);
 font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+backgroudn-color:rgb(190, 190, 190);
+border:1px solid rgb(200, 237, 240);
 </string>
     </property>
     <property name="text">
@@ -123,8 +132,12 @@ font: 75 10pt &quot;MS Shell Dlg 2&quot;;
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;
-color:rgb(150, 150, 150);</string>
+     <string notr="true">
+color: rgb(200, 237, 240);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+backgroudn-color:rgb(190, 190, 190);
+border:1px solid rgb(200, 237, 240);
+</string>
     </property>
     <property name="text">
      <string>SUM</string>
