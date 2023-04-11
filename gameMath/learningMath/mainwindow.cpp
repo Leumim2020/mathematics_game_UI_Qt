@@ -13,7 +13,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
 void MainWindow::on_pushButton_4_clicked()
 {
     formsum2 = new formsum(this);
