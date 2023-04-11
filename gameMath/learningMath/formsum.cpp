@@ -16,7 +16,7 @@ formsum::~formsum()
 }
 
 
-void formsum::ini_results(std::vector<unsigned int> &results_operation){
+void formsum::ini_results(std::vector<int> &results_operation){
 
     results_operation = {10,20,30,40,50,60,70,80,90,100,
                          15,25,35,45,55,65,75,85,95,105,
@@ -51,33 +51,26 @@ void formsum::on_pushButton_clicked()
 }
 
 
-void formsum::on_lineEditc1_textEdited(unsigned int &arg1)
+void formsum::on_lineEditc1_textEdited(int &arg1)
 {
     arg1 = ui->lineEditc1->text().toInt();
 }
 
 
-void formsum::on_lineEditc2_textEdited(unsigned int &arg1)
+void formsum::on_lineEditc2_textEdited(int &arg1)
 {
     arg1 = ui->lineEditc2->text().toInt();
 }
 
-void formsum::sum_level_one(unsigned int v1,unsigned int v2,char victory){
+void formsum::sum_level_one(int v1, int v2,char victory){
 
-    std::vector<unsigned int>vt_values;
+    std::vector<int>vt_values;
     ini_results(vt_values);
 
     sum_result = v1 + v2;
+}
 
-    size_t i = 0;
-
-    if(sum_result == vt_values.at(0)){
-        QMessageBox::information(this,"Information","Voce acertou");
-    }
-
-//    while (i < vt_values.size()) {
-
-//    }
+void formsum::sum_level_two(int _v1,int _v2,int _v3,char _victory){
 
 }
 

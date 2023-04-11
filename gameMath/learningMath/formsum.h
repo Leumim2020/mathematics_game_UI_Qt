@@ -17,19 +17,19 @@ public:
     ~formsum();
 
 public:
-    unsigned int n1{},n2{},sum_result{};
+    int n1{},n2{},sum_result{};
     char vict_ini{'x'};
 
-public: signals:
-    void ini_results(std::vector<unsigned int> &results_operation);
-    void sum_level_one(unsigned int v1,unsigned int v2,char victory);
-    void sum_level_two(unsigned int v1,unsigned int v2,unsigned v3,char victory);
+public slots:
+    void ini_results(std::vector<int> &results_operation);
+    void sum_level_one(int v1,int v2,char victory);
+    void sum_level_two(int _v1,int _v2,int _v3,char _victory);
 
 private slots:
     void on_pushButton_3_clicked();
     void on_pushButton_clicked();
-    void on_lineEditc1_textEdited(unsigned int &arg1);
-    void on_lineEditc2_textEdited(unsigned int &arg1);
+    void on_lineEditc1_textEdited(int &arg1);
+    void on_lineEditc2_textEdited(int &arg1);
 
 private:
     Ui::formsum *ui;};
