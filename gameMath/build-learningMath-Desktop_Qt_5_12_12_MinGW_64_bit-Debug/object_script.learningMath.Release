@@ -1,0 +1,11 @@
+release/form3.o
+release/form4.o
+release/form5.o
+release/formsum.o
+release/main.o
+release/mainwindow.o
+release/moc_form3.o
+release/moc_form4.o
+release/moc_form5.o
+release/moc_formsum.o
+release/moc_mainwindow.o

@@ -39,7 +39,7 @@ public:
         MainWindow->resize(400, 400);
         MainWindow->setMinimumSize(QSize(400, 400));
         MainWindow->setMaximumSize(QSize(400, 400));
-        MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        MainWindow->setStyleSheet(QString::fromUtf8("background-color:rgb(8, 8, 8);"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         label_13 = new QLabel(centralwidget);
@@ -52,29 +52,42 @@ public:
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(100, 260, 191, 51));
         pushButton->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton->setStyleSheet(QString::fromUtf8("color:rgb(150, 150, 150);\n"
+        pushButton->setStyleSheet(QString::fromUtf8("\n"
+"color: rgb(200, 237, 240);\n"
 "font: 75 10pt \"MS Shell Dlg 2\";\n"
+"backgroudn-color:rgb(190, 190, 190);\n"
+"border:1px solid rgb(200, 237, 240);\n"
 ""));
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
         pushButton_2->setGeometry(QRect(100, 200, 191, 51));
         pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_2->setStyleSheet(QString::fromUtf8("color:rgb(150, 150, 150);\n"
+        pushButton_2->setStyleSheet(QString::fromUtf8("\n"
+"color: rgb(200, 237, 240);\n"
 "font: 75 10pt \"MS Shell Dlg 2\";\n"
+"backgroudn-color:rgb(190, 190, 190);\n"
+"border:1px solid rgb(200, 237, 240);\n"
 ""));
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
         pushButton_3->setGeometry(QRect(100, 140, 191, 51));
         pushButton_3->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_3->setStyleSheet(QString::fromUtf8("color:rgb(150, 150, 150);\n"
+        pushButton_3->setStyleSheet(QString::fromUtf8("\n"
+"color: rgb(200, 237, 240);\n"
 "font: 75 10pt \"MS Shell Dlg 2\";\n"
+"backgroudn-color:rgb(190, 190, 190);\n"
+"border:1px solid rgb(200, 237, 240);\n"
 ""));
         pushButton_4 = new QPushButton(centralwidget);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
         pushButton_4->setGeometry(QRect(100, 80, 191, 51));
         pushButton_4->setCursor(QCursor(Qt::PointingHandCursor));
-        pushButton_4->setStyleSheet(QString::fromUtf8("font: 75 10pt \"MS Shell Dlg 2\";\n"
-"color:rgb(150, 150, 150);"));
+        pushButton_4->setStyleSheet(QString::fromUtf8("\n"
+"color: rgb(200, 237, 240);\n"
+"font: 75 10pt \"MS Shell Dlg 2\";\n"
+"backgroudn-color:rgb(190, 190, 190);\n"
+"border:1px solid rgb(200, 237, 240);\n"
+""));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));

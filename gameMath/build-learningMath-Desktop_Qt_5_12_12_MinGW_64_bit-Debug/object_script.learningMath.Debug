@@ -1,0 +1,11 @@
+debug/form3.o
+debug/form4.o
+debug/form5.o
+debug/formsum.o
+debug/main.o
+debug/mainwindow.o
+debug/moc_form3.o
+debug/moc_form4.o
+debug/moc_form5.o
+debug/moc_formsum.o
+debug/moc_mainwindow.o
