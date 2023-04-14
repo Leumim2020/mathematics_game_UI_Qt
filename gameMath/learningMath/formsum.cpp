@@ -8,6 +8,10 @@ formsum::formsum(QWidget *parent) :
     ui(new Ui::formsum)
 {
     ui->setupUi(this);
+    ini_results(vt_values);
+    result_Qs.setNum(vt_values.at(0));
+    ui->pushButton_6_rs->setText(result_Qs);
+
 }
 
 formsum::~formsum()
@@ -47,30 +51,46 @@ void formsum::on_pushButton_clicked()
 {
     on_lineEditc1_textEdited(n1);
     on_lineEditc2_textEdited(n2);
-    sum_level_one(n1,n2,vict_ini);
-}
+    ini_results(vt_values);
 
+    if(n1 != vt_values.at(i) && n2 != vt_values.at(i)){
+        sum_result = n1 + n2;
+        sum_level_one(sum_result);
+    }else if(n1 == vt_values.at(i) || n2 == vt_values.at(i)){
+        QMessageBox::warning(this,"Information","You can't type directly answer please type numbers diferents");
+    }
+
+}
 
 void formsum::on_lineEditc1_textEdited(int &arg1)
 {
     arg1 = ui->lineEditc1->text().toInt();
 }
 
-
 void formsum::on_lineEditc2_textEdited(int &arg1)
 {
     arg1 = ui->lineEditc2->text().toInt();
 }
 
-void formsum::sum_level_one(int v1, int v2,char victory){
+void formsum::sum_level_one(int sum){
 
-    std::vector<int>vt_values;
-    ini_results(vt_values);
+    if(sum == vt_values.at(i))
+    {
+        i++;
+        plays--;
+        on_lineEditc1_textEdited(n1=0);
+        on_lineEditc2_textEdited(n2=0);
+        result_Qs.setNum(vt_values.at(i));
+        ui->pushButton_6_rs->setText(result_Qs);
 
-    sum_result = v1 + v2;
+    }else
+    {
+        QMessageBox::warning(this,"Information","You are wrong try again");
+    }
+
 }
 
-void formsum::sum_level_two(int _v1,int _v2,int _v3,char _victory){
+void formsum::sum_level_two(int sum){
 
 }
 

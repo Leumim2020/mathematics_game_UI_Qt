@@ -17,13 +17,15 @@ public:
     ~formsum();
 
 public:
-    int n1{},n2{},sum_result{};
-    char vict_ini{'x'};
+    QString result_Qs;
+    std::vector<int>vt_values;
+    int i{0},plays{35},n1{},n2{},sum_result{};
+
 
 public slots:
     void ini_results(std::vector<int> &results_operation);
-    void sum_level_one(int v1,int v2,char victory);
-    void sum_level_two(int _v1,int _v2,int _v3,char _victory);
+    void sum_level_one(int sum);
+    void sum_level_two(int sum);
 
 private slots:
     void on_pushButton_3_clicked();
