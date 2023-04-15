@@ -114,30 +114,43 @@ void formsum::on_lineEditc5_textEdited(unsigned int &arg1)
 void formsum::sum_level_one(unsigned int sum){
 
     if(sum == vt_values.at(i)){
-        i++;
-        on_lineEditc1_textEdited(n1=0);
-        on_lineEditc2_textEdited(n2=0);
-        result_Qs.setNum(vt_values.at(i));
-        ui->pushButton_6_rs->setText(result_Qs);
 
-         // disable level one
-        if(i == plays){
-            QMessageBox::information(this,"Information","Congratulations you passed for next level now with three boxes to fill out");
-            ui->lineEditc1->setEnabled(false);
-            ui->lineEditc2->setEnabled(false);
-            ui->lineEditc1->setText("");
-            ui->lineEditc2->setText("");
-            ui->pushButton_6_rs->setText("");
+        // ----------------------------------------------------------------- restarting lineEdits and shows answer
             i++;
-            // activing lineEdits sum level two
+            on_lineEditc1_textEdited(n1=0);
+            on_lineEditc2_textEdited(n2=0);
+            result_Qs.setNum(vt_values.at(i));
+            ui->pushButton_6_rs->setText(result_Qs);
+        // --------------------------------------------------------------------configurate buttonError
+            sucess_t++;
+            result_Qs.setNum(sucess_t);
+            ui->pushButton_9_success->setText(result_Qs);
+
+         // ----------------------------------------------------------------------------------------------------------- disable level one
+            if(i == plays){
+                    QMessageBox::information(this,"Information","Congratulations you passed for next level now with three boxes to fill out");
+                    ui->lineEditc1->setEnabled(false);
+                    ui->lineEditc2->setEnabled(false);
+                    ui->lineEditc1->setText("");
+                    ui->lineEditc2->setText("");
+                    ui->pushButton_6_rs->setText("");
+                    i++;
+         // ------------------------------------------------------------------ activing lineEdits sum level two
                 ui->lineEditc3->setEnabled(true);
                 ui->lineEditc4->setEnabled(true);
                 ui->lineEditc5->setEnabled(true);
-            // end activation
-        }//end disable
+         // -------------------------------------------------------------------end activation
+        }//end disable level one
 
     }else{
+
         QMessageBox::warning(this,"Information","You are wrong try again");
+
+        // --------------------------------------------------------------------configurate buttonSucess
+            erros_t++;
+            result_Qs.setNum(erros_t);
+            ui->pushButton_8_error->setText(result_Qs);
+        //------------------------------------------------------------------------ end configurate
     }
 
 }
@@ -145,30 +158,38 @@ void formsum::sum_level_one(unsigned int sum){
 void formsum::sum_level_two(unsigned int sum){
 
     if(sum == vt_values.at(i)){
-        i++;
-        on_lineEditc3_textEdited(n1=0);
-        on_lineEditc4_textEdited(n2=0);
-        on_lineEditc5_textEdited(n2=0);
-        result_Qs.setNum(vt_values.at(i));
-        ui->pushButton_7_rs->setText(result_Qs);
 
-         // disable level two
-        if(i == ((plays*2)+1)){
-            QMessageBox::information(this,"Information","Congratulations you finished and it is ready for addition operations. Click in the arrow to return and choice another operator to learn to use it");
-            ui->lineEditc3->setText("");
-            ui->lineEditc4->setText("");
-            ui->lineEditc5->setText("");
-            ui->pushButton_7_rs->setText("");
-            ui->lineEditc3->setEnabled(false);
-            ui->lineEditc4->setEnabled(false);
-            ui->lineEditc5->setEnabled(false);
-        }//end disable
+        // ----------------------------------------------------------------- restarting lineEdits and shows answer
+            i++;
+            on_lineEditc3_textEdited(n1=0);
+            on_lineEditc4_textEdited(n2=0);
+            on_lineEditc5_textEdited(n2=0);
+            result_Qs.setNum(vt_values.at(i));
+            ui->pushButton_7_rs->setText(result_Qs);
+        // --------------------------------------------------------------------configurate buttonError
+            sucess_t++;
+            result_Qs.setNum(sucess_t);
+            ui->pushButton_9_success->setText(result_Qs);
+         // ------------------------------------------------------------------------------ disable level two and Ending sum level
+            if(i == ((plays*2)+1)){
+                QMessageBox::information(this,"Information","Congratulations you finished and it is ready for addition operations. Click in the arrow to return and choice another operator to learn to use it");
+                ui->lineEditc3->setText("");
+                ui->lineEditc4->setText("");
+                ui->lineEditc5->setText("");
+                ui->pushButton_7_rs->setText("");
+                ui->lineEditc3->setEnabled(false);
+                ui->lineEditc4->setEnabled(false);
+                ui->lineEditc5->setEnabled(false);
+        }// --------------------------------------------------------------------------end disable
 
     }else{
         QMessageBox::warning(this,"Information","You are wrong try again");
+        // --------------------------------------------------------------------configurate buttonSucess
+            erros_t++;
+            result_Qs.setNum(erros_t);
+            ui->pushButton_8_error->setText(result_Qs);
+        //----------------------------------------------------------------- end configurate
     }
 
 }
-
-
 

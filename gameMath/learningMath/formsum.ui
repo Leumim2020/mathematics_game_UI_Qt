@@ -86,7 +86,7 @@ color:rgb(31, 31, 31);</string>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>100</x>
      <y>130</y>
      <width>21</width>
      <height>20</height>
@@ -259,7 +259,7 @@ color: rgb(200, 237, 240);
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_7">
+  <widget class="QPushButton" name="pushButton_7_rs">
    <property name="enabled">
     <bool>false</bool>
    </property>

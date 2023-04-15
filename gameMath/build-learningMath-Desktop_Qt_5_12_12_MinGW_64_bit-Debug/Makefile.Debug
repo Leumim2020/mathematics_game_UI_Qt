@@ -672,12 +672,6 @@ debug/moc_mainwindow.cpp: ../learningMath/mainwindow.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui/qtouchdevice.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qtabwidget.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui/qicon.h \
-		../learningMath/formsum.h \
-		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/QDialog \
-		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qdialog.h \
-		../learningMath/form3.h \
-		../learningMath/form4.h \
-		../learningMath/form5.h \
 		debug/moc_predefs.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/bin/moc.exe
 	C:\Qt\Qt5.12.12\5.12.12\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Programação/gameMath/build-learningMath-Desktop_Qt_5_12_12_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/Qt5.12.12/5.12.12/mingw73_64/mkspecs/win32-g++ -IC:/Programação/gameMath/learningMath -IC:/Qt/Qt5.12.12/5.12.12/mingw73_64/include -IC:/Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets -IC:/Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui -IC:/Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtANGLE -IC:/Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtCore -I. -IC:/Qt/Qt5.12.12/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.12.12/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Qt5.12.12/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.12.12/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.12.12/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.12.12/Tools/mingw730_64/x86_64-w64-mingw32/include ..\learningMath\mainwindow.h -o debug\moc_mainwindow.cpp
@@ -831,10 +825,7 @@ debug/form3.o: ../learningMath/form3.cpp ../learningMath/form3.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/QMainWindow \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qmainwindow.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qtabwidget.h \
-		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui/qicon.h \
-		../learningMath/formsum.h \
-		../learningMath/form4.h \
-		../learningMath/form5.h
+		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui/qicon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\form3.o ..\learningMath\form3.cpp
 
 debug/form4.o: ../learningMath/form4.cpp ../learningMath/form4.h \
@@ -947,10 +938,7 @@ debug/form4.o: ../learningMath/form4.cpp ../learningMath/form4.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/QMainWindow \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qmainwindow.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qtabwidget.h \
-		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui/qicon.h \
-		../learningMath/formsum.h \
-		../learningMath/form3.h \
-		../learningMath/form5.h
+		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui/qicon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\form4.o ..\learningMath\form4.cpp
 
 debug/form5.o: ../learningMath/form5.cpp ../learningMath/form5.h \
@@ -1063,10 +1051,7 @@ debug/form5.o: ../learningMath/form5.cpp ../learningMath/form5.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/QMainWindow \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qmainwindow.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qtabwidget.h \
-		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui/qicon.h \
-		../learningMath/formsum.h \
-		../learningMath/form3.h \
-		../learningMath/form4.h
+		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui/qicon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\form5.o ..\learningMath\form5.cpp
 
 debug/formsum.o: ../learningMath/formsum.cpp ../learningMath/formsum.h \
@@ -1180,9 +1165,6 @@ debug/formsum.o: ../learningMath/formsum.cpp ../learningMath/formsum.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qmainwindow.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qtabwidget.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui/qicon.h \
-		../learningMath/form3.h \
-		../learningMath/form4.h \
-		../learningMath/form5.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/QMessageBox \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\formsum.o ..\learningMath\formsum.cpp
@@ -1294,12 +1276,6 @@ debug/main.o: ../learningMath/main.cpp ../learningMath/mainwindow.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui/qtouchdevice.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qtabwidget.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui/qicon.h \
-		../learningMath/formsum.h \
-		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/QDialog \
-		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qdialog.h \
-		../learningMath/form3.h \
-		../learningMath/form4.h \
-		../learningMath/form5.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/QApplication \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qapplication.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtCore/qcoreapplication.h \
@@ -1416,13 +1392,13 @@ debug/mainwindow.o: ../learningMath/mainwindow.cpp ../learningMath/mainwindow.h 
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui/qtouchdevice.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qtabwidget.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui/qicon.h \
+		ui_mainwindow.h \
 		../learningMath/formsum.h \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/QDialog \
 		../../../Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets/qdialog.h \
 		../learningMath/form3.h \
 		../learningMath/form4.h \
-		../learningMath/form5.h \
-		ui_mainwindow.h
+		../learningMath/form5.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\learningMath\mainwindow.cpp
 
 debug/moc_form3.o: debug/moc_form3.cpp 
