@@ -72,7 +72,7 @@ public:
         lineEditc3->setMaxLength(4);
         label_2 = new QLabel(formsum);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(110, 130, 21, 20));
+        label_2->setGeometry(QRect(100, 130, 21, 20));
         label_2->setStyleSheet(QString::fromUtf8("\n"
 "color: rgb(0, 170, 255);\n"
 "font: 75 26pt \"Bahnschrift\";"));
