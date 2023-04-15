@@ -19,6 +19,7 @@ public:
 public:
     QString result_Qs;
     std::vector<unsigned int>vt_values;
+    short erros_t{},sucess_t{};
     unsigned int i{0},plays{44},n1{},n2{},n3{},sum_result{};
 
 
