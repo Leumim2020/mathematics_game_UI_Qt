@@ -8,10 +8,18 @@ formsum::formsum(QWidget *parent) :
     ui(new Ui::formsum)
 {
     ui->setupUi(this);
+
+    // initialinzing level one
     ini_results(vt_values);
     result_Qs.setNum(vt_values.at(0));
     ui->pushButton_6_rs->setText(result_Qs);
 
+    // initialinzing level two
+    result_Qs.setNum(vt_values.at(5));
+    ui->pushButton_7_rs->setText(result_Qs);
+    ui->lineEditc3->setEnabled(false);
+    ui->lineEditc4->setEnabled(false);
+    ui->lineEditc5->setEnabled(false);
 }
 
 formsum::~formsum()
@@ -20,7 +28,7 @@ formsum::~formsum()
 }
 
 
-void formsum::ini_results(std::vector<int> &results_operation){
+void formsum::ini_results(std::vector<unsigned int> &results_operation){
 
     results_operation = {10,20,30,40,50,60,70,80,90,100,
                          15,25,35,45,55,65,75,85,95,105,
@@ -49,48 +57,118 @@ void formsum::on_pushButton_3_clicked()
 
 void formsum::on_pushButton_clicked()
 {
-    on_lineEditc1_textEdited(n1);
-    on_lineEditc2_textEdited(n2);
-    ini_results(vt_values);
+    // ----------------------------------------------------sum level one------------------------------------------------------
+      if(i >= 0 && i < 45){
+            on_lineEditc1_textEdited(n1);
+            on_lineEditc2_textEdited(n2);
+            ini_results(vt_values);
+            if(n1 != vt_values.at(i) && n2 != vt_values.at(i)){
+                sum_result = n1 + n2;
+                sum_level_one(sum_result);
+            }else if(n1 == vt_values.at(i) || n2 == vt_values.at(i)){
+                QMessageBox::warning(this,"Information","You can't type directly answer please type numbers diferents");
+            }
+       }
 
-    if(n1 != vt_values.at(i) && n2 != vt_values.at(i)){
-        sum_result = n1 + n2;
-        sum_level_one(sum_result);
-    }else if(n1 == vt_values.at(i) || n2 == vt_values.at(i)){
-        QMessageBox::warning(this,"Information","You can't type directly answer please type numbers diferents");
-    }
+   // ------------------------------------------------------sum level two------------------------------------------------------
+    if(i > plays){
+        on_lineEditc3_textEdited(n1);
+        on_lineEditc4_textEdited(n2);
+        on_lineEditc5_textEdited(n3);
+        if(n1 != vt_values.at(i) && n2 != vt_values.at(i) && n3 != vt_values.at(i)){
+            sum_result = n1 + n2 + n3;
+            sum_level_two(sum_result);
+        }else if(n1 == vt_values.at(i) || n2 == vt_values.at(i) || n3 == vt_values.at(i)){
+            QMessageBox::warning(this,"Information","You can't type directly answer please type numbers diferents");
+        }
 
+     }
 }
 
-void formsum::on_lineEditc1_textEdited(int &arg1)
+void formsum::on_lineEditc1_textEdited(unsigned int &arg1)
 {
     arg1 = ui->lineEditc1->text().toInt();
 }
 
-void formsum::on_lineEditc2_textEdited(int &arg1)
+void formsum::on_lineEditc2_textEdited(unsigned int &arg1)
 {
     arg1 = ui->lineEditc2->text().toInt();
 }
 
-void formsum::sum_level_one(int sum){
+void formsum::on_lineEditc3_textEdited(unsigned int &arg1)
+{
+    arg1 = ui->lineEditc3->text().toInt();
+}
 
-    if(sum == vt_values.at(i))
-    {
+
+void formsum::on_lineEditc4_textEdited(unsigned int &arg1)
+{
+    arg1 = ui->lineEditc4->text().toInt();
+}
+
+void formsum::on_lineEditc5_textEdited(unsigned int &arg1)
+{
+    arg1 = ui->lineEditc5->text().toInt();
+}
+
+void formsum::sum_level_one(unsigned int sum){
+
+    if(sum == vt_values.at(i)){
         i++;
-        plays--;
         on_lineEditc1_textEdited(n1=0);
         on_lineEditc2_textEdited(n2=0);
         result_Qs.setNum(vt_values.at(i));
         ui->pushButton_6_rs->setText(result_Qs);
 
-    }else
-    {
+         // disable level one
+        if(i == plays){
+            QMessageBox::information(this,"Information","Congratulations you passed for next level now with three boxes to fill out");
+            ui->lineEditc1->setEnabled(false);
+            ui->lineEditc2->setEnabled(false);
+            ui->lineEditc1->setText("");
+            ui->lineEditc2->setText("");
+            ui->pushButton_6_rs->setText("");
+            i++;
+            // activing lineEdits sum level two
+                ui->lineEditc3->setEnabled(true);
+                ui->lineEditc4->setEnabled(true);
+                ui->lineEditc5->setEnabled(true);
+            // end activation
+        }//end disable
+
+    }else{
         QMessageBox::warning(this,"Information","You are wrong try again");
     }
 
 }
 
-void formsum::sum_level_two(int sum){
+void formsum::sum_level_two(unsigned int sum){
+
+    if(sum == vt_values.at(i)){
+        i++;
+        on_lineEditc3_textEdited(n1=0);
+        on_lineEditc4_textEdited(n2=0);
+        on_lineEditc5_textEdited(n2=0);
+        result_Qs.setNum(vt_values.at(i));
+        ui->pushButton_7_rs->setText(result_Qs);
+
+         // disable level two
+        if(i == ((plays*2)+1)){
+            QMessageBox::information(this,"Information","Congratulations you finished and it is ready for addition operations. Click in the arrow to return and choice another operator to learn to use it");
+            ui->lineEditc3->setText("");
+            ui->lineEditc4->setText("");
+            ui->lineEditc5->setText("");
+            ui->pushButton_7_rs->setText("");
+            ui->lineEditc3->setEnabled(false);
+            ui->lineEditc4->setEnabled(false);
+            ui->lineEditc5->setEnabled(false);
+        }//end disable
+
+    }else{
+        QMessageBox::warning(this,"Information","You are wrong try again");
+    }
 
 }
+
+
 
