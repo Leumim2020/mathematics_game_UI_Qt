@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_formsum_t {
-    QByteArrayData data[20];
-    char stringdata0[226];
+    QByteArrayData data[17];
+    char stringdata0[272];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -34,31 +34,30 @@ static const qt_meta_stringdata_formsum_t qt_meta_stringdata_formsum = {
 QT_MOC_LITERAL(0, 0, 7), // "formsum"
 QT_MOC_LITERAL(1, 8, 11), // "ini_results"
 QT_MOC_LITERAL(2, 20, 0), // ""
-QT_MOC_LITERAL(3, 21, 17), // "std::vector<int>&"
-QT_MOC_LITERAL(4, 39, 17), // "results_operation"
-QT_MOC_LITERAL(5, 57, 13), // "sum_level_one"
-QT_MOC_LITERAL(6, 71, 2), // "v1"
-QT_MOC_LITERAL(7, 74, 2), // "v2"
-QT_MOC_LITERAL(8, 77, 7), // "victory"
-QT_MOC_LITERAL(9, 85, 13), // "sum_level_two"
-QT_MOC_LITERAL(10, 99, 3), // "_v1"
-QT_MOC_LITERAL(11, 103, 3), // "_v2"
-QT_MOC_LITERAL(12, 107, 3), // "_v3"
-QT_MOC_LITERAL(13, 111, 8), // "_victory"
-QT_MOC_LITERAL(14, 120, 23), // "on_pushButton_3_clicked"
-QT_MOC_LITERAL(15, 144, 21), // "on_pushButton_clicked"
-QT_MOC_LITERAL(16, 166, 24), // "on_lineEditc1_textEdited"
-QT_MOC_LITERAL(17, 191, 4), // "int&"
-QT_MOC_LITERAL(18, 196, 4), // "arg1"
-QT_MOC_LITERAL(19, 201, 24) // "on_lineEditc2_textEdited"
+QT_MOC_LITERAL(3, 21, 18), // "std::vector<uint>&"
+QT_MOC_LITERAL(4, 40, 17), // "results_operation"
+QT_MOC_LITERAL(5, 58, 13), // "sum_level_one"
+QT_MOC_LITERAL(6, 72, 3), // "sum"
+QT_MOC_LITERAL(7, 76, 13), // "sum_level_two"
+QT_MOC_LITERAL(8, 90, 23), // "on_pushButton_3_clicked"
+QT_MOC_LITERAL(9, 114, 21), // "on_pushButton_clicked"
+QT_MOC_LITERAL(10, 136, 24), // "on_lineEditc1_textEdited"
+QT_MOC_LITERAL(11, 161, 5), // "uint&"
+QT_MOC_LITERAL(12, 167, 4), // "arg1"
+QT_MOC_LITERAL(13, 172, 24), // "on_lineEditc2_textEdited"
+QT_MOC_LITERAL(14, 197, 24), // "on_lineEditc3_textEdited"
+QT_MOC_LITERAL(15, 222, 24), // "on_lineEditc4_textEdited"
+QT_MOC_LITERAL(16, 247, 24) // "on_lineEditc5_textEdited"
 
     },
-    "formsum\0ini_results\0\0std::vector<int>&\0"
-    "results_operation\0sum_level_one\0v1\0"
-    "v2\0victory\0sum_level_two\0_v1\0_v2\0_v3\0"
-    "_victory\0on_pushButton_3_clicked\0"
+    "formsum\0ini_results\0\0std::vector<uint>&\0"
+    "results_operation\0sum_level_one\0sum\0"
+    "sum_level_two\0on_pushButton_3_clicked\0"
     "on_pushButton_clicked\0on_lineEditc1_textEdited\0"
-    "int&\0arg1\0on_lineEditc2_textEdited"
+    "uint&\0arg1\0on_lineEditc2_textEdited\0"
+    "on_lineEditc3_textEdited\0"
+    "on_lineEditc4_textEdited\0"
+    "on_lineEditc5_textEdited"
 };
 #undef QT_MOC_LITERAL
 
@@ -68,7 +67,7 @@ static const uint qt_meta_data_formsum[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       7,   14, // methods
+      10,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -76,22 +75,28 @@ static const uint qt_meta_data_formsum[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   49,    2, 0x0a /* Public */,
-       5,    3,   52,    2, 0x0a /* Public */,
-       9,    4,   59,    2, 0x0a /* Public */,
-      14,    0,   68,    2, 0x08 /* Private */,
-      15,    0,   69,    2, 0x08 /* Private */,
-      16,    1,   70,    2, 0x08 /* Private */,
-      19,    1,   73,    2, 0x08 /* Private */,
+       1,    1,   64,    2, 0x0a /* Public */,
+       5,    1,   67,    2, 0x0a /* Public */,
+       7,    1,   70,    2, 0x0a /* Public */,
+       8,    0,   73,    2, 0x08 /* Private */,
+       9,    0,   74,    2, 0x08 /* Private */,
+      10,    1,   75,    2, 0x08 /* Private */,
+      13,    1,   78,    2, 0x08 /* Private */,
+      14,    1,   81,    2, 0x08 /* Private */,
+      15,    1,   84,    2, 0x08 /* Private */,
+      16,    1,   87,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
-    QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Char,    6,    7,    8,
-    QMetaType::Void, QMetaType::Int, QMetaType::Int, QMetaType::Int, QMetaType::Char,   10,   11,   12,   13,
+    QMetaType::Void, QMetaType::UInt,    6,
+    QMetaType::Void, QMetaType::UInt,    6,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 17,   18,
-    QMetaType::Void, 0x80000000 | 17,   18,
+    QMetaType::Void, 0x80000000 | 11,   12,
+    QMetaType::Void, 0x80000000 | 11,   12,
+    QMetaType::Void, 0x80000000 | 11,   12,
+    QMetaType::Void, 0x80000000 | 11,   12,
+    QMetaType::Void, 0x80000000 | 11,   12,
 
        0        // eod
 };
@@ -102,13 +107,16 @@ void formsum::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         auto *_t = static_cast<formsum *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->ini_results((*reinterpret_cast< std::vector<int>(*)>(_a[1]))); break;
-        case 1: _t->sum_level_one((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< char(*)>(_a[3]))); break;
-        case 2: _t->sum_level_two((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< char(*)>(_a[4]))); break;
+        case 0: _t->ini_results((*reinterpret_cast< std::vector<uint>(*)>(_a[1]))); break;
+        case 1: _t->sum_level_one((*reinterpret_cast< uint(*)>(_a[1]))); break;
+        case 2: _t->sum_level_two((*reinterpret_cast< uint(*)>(_a[1]))); break;
         case 3: _t->on_pushButton_3_clicked(); break;
         case 4: _t->on_pushButton_clicked(); break;
-        case 5: _t->on_lineEditc1_textEdited((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 6: _t->on_lineEditc2_textEdited((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 5: _t->on_lineEditc1_textEdited((*reinterpret_cast< uint(*)>(_a[1]))); break;
+        case 6: _t->on_lineEditc2_textEdited((*reinterpret_cast< uint(*)>(_a[1]))); break;
+        case 7: _t->on_lineEditc3_textEdited((*reinterpret_cast< uint(*)>(_a[1]))); break;
+        case 8: _t->on_lineEditc4_textEdited((*reinterpret_cast< uint(*)>(_a[1]))); break;
+        case 9: _t->on_lineEditc5_textEdited((*reinterpret_cast< uint(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -143,13 +151,13 @@ int formsum::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 7)
+        if (_id < 10)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 7;
+        _id -= 10;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 7)
+        if (_id < 10)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 7;
+        _id -= 10;
     }
     return _id;
 }
