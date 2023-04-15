@@ -32,8 +32,8 @@ public:
     QLabel *label_3;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
-    QPushButton *pushButton_6;
-    QPushButton *pushButton_7;
+    QPushButton *pushButton_6_rs;
+    QPushButton *pushButton_7_rs;
     QLineEdit *lineEditc4;
     QLineEdit *lineEditc5;
     QPushButton *pushButton_4;
@@ -48,7 +48,7 @@ public:
         formsum->resize(400, 300);
         formsum->setMinimumSize(QSize(400, 300));
         formsum->setMaximumSize(QSize(400, 300));
-        formsum->setStyleSheet(QString::fromUtf8("background-color:#bebeb;\n"
+        formsum->setStyleSheet(QString::fromUtf8("background-color:white;\n"
 ""));
         label_5 = new QLabel(formsum);
         label_5->setObjectName(QString::fromUtf8("label_5"));
@@ -60,13 +60,15 @@ public:
         lineEditc1->setObjectName(QString::fromUtf8("lineEditc1"));
         lineEditc1->setGeometry(QRect(20, 120, 71, 31));
         lineEditc1->setStyleSheet(QString::fromUtf8("font: 75 12pt \"MS Shell Dlg 2\";\n"
-"color: rgb(200, 237, 240);"));
+"background-color: #bebeb;\n"
+"color:rgb(31, 31, 31);"));
         lineEditc1->setMaxLength(4);
         lineEditc3 = new QLineEdit(formsum);
         lineEditc3->setObjectName(QString::fromUtf8("lineEditc3"));
         lineEditc3->setGeometry(QRect(20, 160, 61, 31));
         lineEditc3->setStyleSheet(QString::fromUtf8("font: 75 12pt \"MS Shell Dlg 2\";\n"
-"color: rgb(200, 237, 240);"));
+"background-color: #bebeb;\n"
+"color:rgb(31, 31, 31);"));
         lineEditc3->setMaxLength(4);
         label_2 = new QLabel(formsum);
         label_2->setObjectName(QString::fromUtf8("label_2"));
@@ -91,7 +93,8 @@ public:
         lineEditc2->setObjectName(QString::fromUtf8("lineEditc2"));
         lineEditc2->setGeometry(QRect(140, 120, 71, 31));
         lineEditc2->setStyleSheet(QString::fromUtf8("font: 75 12pt \"MS Shell Dlg 2\";\n"
-"color: rgb(200, 237, 240);"));
+"background-color: #bebeb;\n"
+"color:rgb(31, 31, 31);"));
         lineEditc2->setMaxLength(4);
         label_4 = new QLabel(formsum);
         label_4->setObjectName(QString::fromUtf8("label_4"));
@@ -119,37 +122,37 @@ public:
         pushButton_3->setStyleSheet(QString::fromUtf8("color: rgb(200, 237, 240);\n"
 "background-color:rgb(31, 31, 31);\n"
 "border:1px solid rgb(200, 237, 240);"));
-        pushButton_6 = new QPushButton(formsum);
-        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
-        pushButton_6->setEnabled(false);
-        pushButton_6->setGeometry(QRect(250, 120, 71, 31));
-        pushButton_6->setStyleSheet(QString::fromUtf8("font: 75 12pt \"MS Shell Dlg 2\";\n"
-"background-color:rgb(223, 223, 223);\n"
+        pushButton_6_rs = new QPushButton(formsum);
+        pushButton_6_rs->setObjectName(QString::fromUtf8("pushButton_6_rs"));
+        pushButton_6_rs->setEnabled(false);
+        pushButton_6_rs->setGeometry(QRect(250, 120, 71, 31));
+        pushButton_6_rs->setStyleSheet(QString::fromUtf8("font: 75 12pt \"MS Shell Dlg 2\";\n"
+"background-color:rgb(31, 31, 31);\n"
 "border:none;\n"
-"color:rgb(200,237,240);"));
-        pushButton_7 = new QPushButton(formsum);
-        pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
-        pushButton_7->setEnabled(false);
-        pushButton_7->setGeometry(QRect(310, 160, 71, 31));
-        pushButton_7->setStyleSheet(QString::fromUtf8("font: 75 12pt \"MS Shell Dlg 2\";\n"
-"background-color:rgb(223, 223, 223);\n"
+"color: rgb(200, 237, 240);\n"
+""));
+        pushButton_7_rs = new QPushButton(formsum);
+        pushButton_7_rs->setObjectName(QString::fromUtf8("pushButton_7_rs"));
+        pushButton_7_rs->setEnabled(false);
+        pushButton_7_rs->setGeometry(QRect(310, 160, 71, 31));
+        pushButton_7_rs->setStyleSheet(QString::fromUtf8("font: 75 12pt \"MS Shell Dlg 2\";\n"
+"background-color:rgb(31, 31, 31);\n"
 "border:none;\n"
-"color:rgb(200,237,240);"));
+"color: rgb(200, 237, 240);\n"
+""));
         lineEditc4 = new QLineEdit(formsum);
         lineEditc4->setObjectName(QString::fromUtf8("lineEditc4"));
         lineEditc4->setGeometry(QRect(110, 160, 71, 31));
-        lineEditc4->setStyleSheet(QString::fromUtf8("\n"
-"font: 75 12pt \"MS Shell Dlg 2\";\n"
+        lineEditc4->setStyleSheet(QString::fromUtf8("font: 75 12pt \"MS Shell Dlg 2\";\n"
 "background-color: #bebeb;\n"
-"color: rgb(200, 237, 240);"));
+"color:rgb(31, 31, 31);"));
         lineEditc4->setMaxLength(4);
         lineEditc5 = new QLineEdit(formsum);
         lineEditc5->setObjectName(QString::fromUtf8("lineEditc5"));
         lineEditc5->setGeometry(QRect(210, 160, 71, 31));
-        lineEditc5->setStyleSheet(QString::fromUtf8("\n"
-"font: 75 12pt \"MS Shell Dlg 2\";\n"
+        lineEditc5->setStyleSheet(QString::fromUtf8("font: 75 12pt \"MS Shell Dlg 2\";\n"
 "background-color: #bebeb;\n"
-"color: rgb(200, 237, 240);"));
+"color:rgb(31, 31, 31);"));
         lineEditc5->setMaxLength(4);
         pushButton_4 = new QPushButton(formsum);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
@@ -200,8 +203,8 @@ public:
         label_3->setText(QApplication::translate("formsum", "=", nullptr));
         pushButton_2->setText(QApplication::translate("formsum", "GETTING STARTED SUM", nullptr));
         pushButton_3->setText(QApplication::translate("formsum", "<-", nullptr));
-        pushButton_6->setText(QString());
-        pushButton_7->setText(QString());
+        pushButton_6_rs->setText(QString());
+        pushButton_7_rs->setText(QString());
         lineEditc4->setText(QString());
         lineEditc5->setText(QString());
         pushButton_4->setText(QApplication::translate("formsum", "Erros", nullptr));
