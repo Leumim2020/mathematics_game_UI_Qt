@@ -58,7 +58,6 @@ font: 75 26pt &quot;Bahnschrift&quot;;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: #bebeb;
 color:rgb(31, 31, 31);</string>
    </property>
    <property name="maxLength">
@@ -76,7 +75,6 @@ color:rgb(31, 31, 31);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: #bebeb;
 color:rgb(31, 31, 31);</string>
    </property>
    <property name="maxLength">
@@ -151,7 +149,6 @@ font: 75 26pt &quot;Bahnschrift&quot;;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: #bebeb;
 color:rgb(31, 31, 31);</string>
    </property>
    <property name="maxLength">
@@ -293,7 +290,6 @@ color: rgb(200, 237, 240);
    </property>
    <property name="styleSheet">
     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: #bebeb;
 color:rgb(31, 31, 31);</string>
    </property>
    <property name="text">
@@ -314,7 +310,6 @@ color:rgb(31, 31, 31);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: #bebeb;
 color:rgb(31, 31, 31);</string>
    </property>
    <property name="text">

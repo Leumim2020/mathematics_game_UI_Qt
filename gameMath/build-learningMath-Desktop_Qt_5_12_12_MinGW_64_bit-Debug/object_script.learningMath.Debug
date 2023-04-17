@@ -4,6 +4,7 @@ debug/form5.o
 debug/formsum.o
 debug/main.o
 debug/mainwindow.o
+debug/qrc_sounds.o
 debug/moc_form3.o
 debug/moc_form4.o
 debug/moc_form5.o

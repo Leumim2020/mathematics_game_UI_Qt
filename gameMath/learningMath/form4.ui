@@ -26,7 +26,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:#bebeb;
+   <string notr="true">background-color:#fff;
 </string>
   </property>
   <widget class="QLineEdit" name="lineEdit_4">
@@ -40,8 +40,7 @@
    </property>
    <property name="styleSheet">
     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-background-color:#bebeb;
-color: rgb(200, 237, 240);</string>
+color: rgb(31, 31, 31);</string>
    </property>
    <property name="maxLength">
     <number>4</number>
@@ -94,8 +93,7 @@ font: 75 26pt &quot;Bahnschrift&quot;;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-background-color:#bebeb;
-color: rgb(200, 237, 240);</string>
+color: rgb(31, 31, 31);</string>
    </property>
    <property name="maxLength">
     <number>4</number>
@@ -229,8 +227,7 @@ border: 1px solid rgb(200, 237, 240);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-background-color:#bebeb;
-color: rgb(200, 237, 240);</string>
+color: rgb(31, 31, 31);</string>
    </property>
    <property name="maxLength">
     <number>4</number>
@@ -250,7 +247,7 @@ color: rgb(200, 237, 240);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-background-color:rgb(223, 223, 223);
+background-color:rgb(31, 31, 31);
 border:none;
 color:rgb(200,237,240);</string>
    </property>
@@ -272,7 +269,7 @@ color:rgb(200,237,240);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-background-color:rgb(223, 223, 223);
+background-color:rgb(31, 31, 31);
 border:none;
 color:rgb(200,237,240);</string>
    </property>
@@ -290,10 +287,8 @@ color:rgb(200,237,240);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">
-font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: #bebeb;
-color: rgb(200, 237, 240);</string>
+    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(31, 31, 31);</string>
    </property>
    <property name="text">
     <string/>
@@ -312,10 +307,8 @@ color: rgb(200, 237, 240);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">
-font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: #bebeb;
-color: rgb(200, 237, 240);</string>
+    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(31, 31, 31);</string>
    </property>
    <property name="text">
     <string/>
