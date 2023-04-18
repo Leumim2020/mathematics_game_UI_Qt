@@ -28,7 +28,7 @@
   <property name="styleSheet">
    <string notr="true">background-color:#fff;</string>
   </property>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="lineEdit_c3">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -201,7 +201,7 @@ border:1px solid rgb(200, 237, 240);</string>
     <string>&lt;-</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_9">
+  <widget class="QLineEdit" name="lineEdit_c1">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -221,7 +221,7 @@ color: rgb(31,31,31);</string>
     <number>4</number>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_10">
+  <widget class="QLineEdit" name="lineEdit_c2">
    <property name="geometry">
     <rect>
      <x>140</x>
@@ -241,7 +241,7 @@ color: rgb(31,31,31);</string>
     <number>4</number>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_7">
+  <widget class="QPushButton" name="pushButton_7_rs">
    <property name="enabled">
     <bool>false</bool>
    </property>
@@ -263,7 +263,7 @@ color:rgb(200,237,240);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_6">
+  <widget class="QPushButton" name="pushButton_6_rs">
    <property name="enabled">
     <bool>false</bool>
    </property>
@@ -285,7 +285,7 @@ color:rgb(200,237,240);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_11">
+  <widget class="QLineEdit" name="lineEdit_c4">
    <property name="geometry">
     <rect>
      <x>110</x>
@@ -305,7 +305,7 @@ color: rgb(31,31,31);</string>
     <number>4</number>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_12">
+  <widget class="QLineEdit" name="lineEdit_c5">
    <property name="geometry">
     <rect>
      <x>210</x>

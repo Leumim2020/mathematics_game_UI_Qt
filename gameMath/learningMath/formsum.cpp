@@ -15,7 +15,7 @@ formsum::formsum(QWidget *parent) :
     ui->pushButton_6_rs->setText(result_Qs);
 
     // initialinzing level two
-    result_Qs.setNum(vt_values.at(5));
+    result_Qs.setNum(vt_values.at(45));
     ui->pushButton_7_rs->setText(result_Qs);
     ui->lineEditc3->setEnabled(false);
     ui->lineEditc4->setEnabled(false);
