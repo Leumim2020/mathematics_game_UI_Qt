@@ -1,7 +1,7 @@
 #include "formsum.h"
 #include "ui_formsum.h"
 #include "mainwindow.h"
-#include "QMessageBox"
+#include <QMessageBox>
 
 formsum::formsum(QWidget *parent) :
     QDialog(parent),
@@ -50,7 +50,7 @@ void formsum::ini_results(std::vector<unsigned int> &results_operation){
 
 void formsum::on_pushButton_3_clicked()
 {
-    MainWindow *f1 = new MainWindow();
+    MainWindow *f1 = new MainWindow;
     f1->show();
 }
 
@@ -128,6 +128,8 @@ void formsum::sum_level_one(unsigned int sum){
 
          // ----------------------------------------------------------------------------------------------------------- disable level one
             if(i == plays){
+                    audio->setMedia(QUrl::fromLocalFile("C:/gameMath/mathematics_game_UI_Qt/gameMath/learningMath/sounds/congrutalions.mp3"));
+                    audio->play();
                     QMessageBox::information(this,"Information","Congratulations you passed for next level now with three boxes to fill out");
                     ui->lineEditc1->setEnabled(false);
                     ui->lineEditc2->setEnabled(false);
@@ -143,7 +145,8 @@ void formsum::sum_level_one(unsigned int sum){
         }//end disable level one
 
     }else{
-
+        audio->setMedia(QUrl::fromLocalFile("C:/gameMath/mathematics_game_UI_Qt/gameMath/learningMath/sounds/wrong.mp3"));
+        audio->play();
         QMessageBox::warning(this,"Information","You are wrong try again");
 
         // --------------------------------------------------------------------configurate buttonSucess
@@ -172,6 +175,8 @@ void formsum::sum_level_two(unsigned int sum){
             ui->pushButton_9_success->setText(result_Qs);
          // ------------------------------------------------------------------------------ disable level two and Ending sum level
             if(i == ((plays*2)+1)){
+                audio->setMedia(QUrl::fromLocalFile("C:/gameMath/mathematics_game_UI_Qt/gameMath/learningMath/sounds/congrutalions.mp3"));
+                audio->play();
                 QMessageBox::information(this,"Information","Congratulations you finished and it is ready for addition operations. Click in the arrow to return and choice another operator to learn to use it");
                 ui->lineEditc3->setText("");
                 ui->lineEditc4->setText("");
@@ -183,6 +188,8 @@ void formsum::sum_level_two(unsigned int sum){
         }// --------------------------------------------------------------------------end disable
 
     }else{
+        audio->setMedia(QUrl::fromLocalFile("C:/gameMath/mathematics_game_UI_Qt/gameMath/learningMath/sounds/wrong.mp3"));
+        audio->play();
         QMessageBox::warning(this,"Information","You are wrong try again");
         // --------------------------------------------------------------------configurate buttonSucess
             erros_t++;

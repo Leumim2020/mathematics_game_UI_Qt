@@ -8,7 +8,7 @@ form3::form3(QWidget *parent) :
     ui(new Ui::form3)
 {
     ui->setupUi(this);
-
+    QMessageBox::about(this,"Help","To solve this level you will need to use the signal minus '-' in numbers sometimes");
     //initializing level one
     ini_results(vt_values);
     result_Qs.setNum(vt_values.at(0));
@@ -51,7 +51,7 @@ void form3::ini_results(std::vector<signed int> &results_operation){
 
 void form3::on_pushButton_3_clicked()
 {
-    MainWindow *f2 = new MainWindow();
+    MainWindow *f2 = new MainWindow;
     f2->show();
 }
 
@@ -129,6 +129,10 @@ void form3::subtraction_level_one(signed int sub){
 
          // ----------------------------------------------------------------------------------------------------------- disable level one
             if(i == plays){
+                    audio = new QMediaPlayer;
+                    audio->setMedia(QUrl::fromLocalFile("C:/gameMath/mathematics_game_UI_Qt/gameMath/learningMath/sounds/congrutalions.mp3"));
+                    audio->play();
+
                     QMessageBox::information(this,"Information","Congratulations you passed for next level now with three boxes to fill out");
                     ui->lineEdit_c1->setEnabled(false);
                     ui->lineEdit_c2->setEnabled(false);
@@ -144,6 +148,8 @@ void form3::subtraction_level_one(signed int sub){
         }//end disable level one
 
     }else{
+        audio->setMedia(QUrl::fromLocalFile("C:/gameMath/mathematics_game_UI_Qt/gameMath/learningMath/sounds/wrong.mp3"));
+        audio->play();
 
         QMessageBox::warning(this,"Information","You are wrong try again");
 
@@ -173,6 +179,9 @@ void form3::subtraction_level_two(signed int sub){
             ui->pushButton_9_success->setText(result_Qs);
          // ------------------------------------------------------------------------------ disable level two and Ending sum level
             if(i == ((plays*2)+1)){
+                audio->setMedia(QUrl::fromLocalFile("C:/gameMath/mathematics_game_UI_Qt/gameMath/learningMath/sounds/congrutalions.mp3"));
+                audio->play();
+
                 QMessageBox::information(this,"Information","Congratulations you finished and it is ready for addition operations. Click in the arrow to return and choice another operator to learn to use it");
                 ui->lineEdit_c3->setText("");
                 ui->lineEdit_c4->setText("");
@@ -184,6 +193,9 @@ void form3::subtraction_level_two(signed int sub){
         }// --------------------------------------------------------------------------end disable
 
     }else{
+        audio->setMedia(QUrl::fromLocalFile("C:/gameMath/mathematics_game_UI_Qt/gameMath/learningMath/sounds/wrong.mp3"));
+        audio->play();
+
         QMessageBox::warning(this,"Information","You are wrong try again");
         // --------------------------------------------------------------------configurate buttonSucess
             erros_t++;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <widget class="QWidget" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -26,135 +26,115 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:rgb(8, 8, 8);</string>
+   <string notr="true">background-color:rgb(8,8,8);</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label_13">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>10</y>
-      <width>251</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 16pt &quot;Bahnschrift&quot;;
-color: rgb(200, 237, 240);
-</string>
-    </property>
-    <property name="text">
-     <string>Learning basic operations</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>260</y>
-      <width>191</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-color: rgb(200, 237, 240);
-font: 75 10pt &quot;MS Shell Dlg 2&quot;;
-backgroudn-color:rgb(190, 190, 190);
-border:1px solid rgb(200, 237, 240);
-</string>
-    </property>
-    <property name="text">
-     <string>DIVISION</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>200</y>
-      <width>191</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-color: rgb(200, 237, 240);
-font: 75 10pt &quot;MS Shell Dlg 2&quot;;
-backgroudn-color:rgb(190, 190, 190);
-border:1px solid rgb(200, 237, 240);
-</string>
-    </property>
-    <property name="text">
-     <string>MULTIPLICATION</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>140</y>
-      <width>191</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-color: rgb(200, 237, 240);
-font: 75 10pt &quot;MS Shell Dlg 2&quot;;
-backgroudn-color:rgb(190, 190, 190);
-border:1px solid rgb(200, 237, 240);
-</string>
-    </property>
-    <property name="text">
-     <string>SUBTRACTION</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>80</y>
-      <width>191</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-color: rgb(200, 237, 240);
-font: 75 10pt &quot;MS Shell Dlg 2&quot;;
-backgroudn-color:rgb(190, 190, 190);
-border:1px solid rgb(200, 237, 240);
-</string>
-    </property>
-    <property name="text">
-     <string>SUM</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
+  <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>400</width>
-     <height>20</height>
+     <x>100</x>
+     <y>110</y>
+     <width>191</width>
+     <height>51</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(200, 237, 240);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+backgroudn-color:rgb(190, 190, 190);
+border:1px solid rgb(200, 237, 240);</string>
+   </property>
+   <property name="text">
+    <string>SUM</string>
+   </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>230</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(200, 237, 240);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+backgroudn-color:rgb(190, 190, 190);
+border:1px solid rgb(200, 237, 240);</string>
+   </property>
+   <property name="text">
+    <string>MULTIPLICATION</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>290</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(200, 237, 240);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+backgroudn-color:rgb(190, 190, 190);
+border:1px solid rgb(200, 237, 240);</string>
+   </property>
+   <property name="text">
+    <string>DIVISION</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>30</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;Bahnschrift&quot;;
+background-color:rgb(8,8,8);
+color: rgb(200, 237, 240);
+</string>
+   </property>
+   <property name="text">
+    <string>Learning basic operations</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>170</y>
+     <width>191</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(200, 237, 240);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+backgroudn-color:rgb(190, 190, 190);
+border:1px solid rgb(200, 237, 240);</string>
+   </property>
+   <property name="text">
+    <string>SUBTRACTION</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

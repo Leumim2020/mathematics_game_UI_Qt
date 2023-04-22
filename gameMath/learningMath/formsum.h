@@ -2,6 +2,7 @@
 #define FORMSUM_H
 
 #include <QDialog>
+#include <QMediaPlayer>
 #include <vector>
 
 namespace Ui {
@@ -16,11 +17,13 @@ public:
     explicit formsum(QWidget *parent = nullptr);
     ~formsum();
 
-private:
+public:
+    QMediaPlayer *audio = new QMediaPlayer;
     QString result_Qs;
     std::vector<unsigned int>vt_values;
-    short erros_t{},sucess_t{};
-    unsigned int i{},plays{44},n1{},n2{},n3{},sum_result{};
+    unsigned short erros_t{},sucess_t{},plays{44};
+    unsigned int n1{},n2{},n3{},sum_result{};
+    int i{};
 
 private slots:
     void on_pushButton_3_clicked();

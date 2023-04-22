@@ -10,17 +10,28 @@
     <height>300</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: #fff;
-</string>
+   <string notr="true">background-color:#fff;</string>
   </property>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="lineEdit_c4">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>120</x>
      <y>170</y>
      <width>71</width>
      <height>31</height>
@@ -30,157 +41,11 @@
     <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 color:rgb(31, 31, 31);</string>
    </property>
-   <property name="maxLength">
-    <number>4</number>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>180</y>
-     <width>21</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-color: rgb(0, 170, 255);
-font: 75 26pt &quot;Bahnschrift&quot;;</string>
-   </property>
    <property name="text">
-    <string>/</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>100</x>
-     <y>180</y>
-     <width>20</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-color: rgb(0, 170, 255);
-font: 75 26pt &quot;Bahnschrift&quot;;</string>
-   </property>
-   <property name="text">
-    <string>/</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>120</y>
-     <width>71</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-color:rgb(31, 31, 31);</string>
+    <string/>
    </property>
    <property name="maxLength">
     <number>4</number>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>130</y>
-     <width>21</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-color: rgb(0, 170, 255);
-font: 75 26pt &quot;Bahnschrift&quot;;</string>
-   </property>
-   <property name="text">
-    <string>=</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>180</y>
-     <width>21</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-color: rgb(0, 170, 255);
-font: 75 26pt &quot;Bahnschrift&quot;;</string>
-   </property>
-   <property name="text">
-    <string>=</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>10</y>
-     <width>241</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(200, 237, 240);
-background-color:rgb(31, 31, 31);
-border: 1px solid rgb(200, 237, 240);</string>
-   </property>
-   <property name="text">
-    <string>GETTING STARTED DIVISION</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>100</x>
-     <y>130</y>
-     <width>21</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-color: rgb(0, 170, 255);
-font: 75 26pt &quot;Bahnschrift&quot;;</string>
-   </property>
-   <property name="text">
-    <string>/</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_3">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>240</y>
-     <width>91</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(200, 237, 240);
-background-color:rgb(31, 31, 31);
-border: 1px solid rgb(200, 237, 240);;</string>
-   </property>
-   <property name="text">
-    <string>&lt;-</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
@@ -204,46 +69,25 @@ border: 1px solid rgb(200, 237, 240);</string>
     <string>VERIFY</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>120</y>
-     <width>71</width>
-     <height>31</height>
+     <x>290</x>
+     <y>180</y>
+     <width>21</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-color:rgb(31, 31, 31);</string>
-   </property>
-   <property name="maxLength">
-    <number>4</number>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_7">
-   <property name="enabled">
-    <bool>false</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>310</x>
-     <y>170</y>
-     <width>71</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-background-color:rgb(31, 31, 31);
-border:none;
-color: rgb(200, 237, 240);</string>
+    <string notr="true">
+color: rgb(0, 170, 255);
+font: 75 26pt &quot;Bahnschrift&quot;;</string>
    </property>
    <property name="text">
-    <string/>
+    <string>=</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_6">
+  <widget class="QPushButton" name="pushButton_6_rs">
    <property name="enabled">
     <bool>false</bool>
    </property>
@@ -265,44 +109,97 @@ color: rgb(200, 237, 240);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_9">
+  <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>170</y>
-     <width>71</width>
-     <height>31</height>
+     <x>100</x>
+     <y>130</y>
+     <width>21</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-color:rgb(31, 31, 31);</string>
+    <string notr="true">
+color: rgb(0, 170, 255);
+font: 75 26pt &quot;Bahnschrift&quot;;</string>
    </property>
    <property name="text">
-    <string/>
-   </property>
-   <property name="maxLength">
-    <number>4</number>
+    <string>/</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_10">
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>170</y>
-     <width>71</width>
+     <x>280</x>
+     <y>60</y>
+     <width>51</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-color:rgb(31, 31, 31);</string>
+    <string notr="true">color: rgb(200, 237, 240);
+background-color:rgb(31, 31, 31);
+border:1px solid rgb(200, 237, 240);</string>
    </property>
    <property name="text">
-    <string/>
+    <string>Success</string>
    </property>
-   <property name="maxLength">
-    <number>4</number>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>180</y>
+     <width>20</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+color: rgb(0, 170, 255);
+font: 75 26pt &quot;Bahnschrift&quot;;</string>
+   </property>
+   <property name="text">
+    <string>/</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>180</y>
+     <width>21</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+color: rgb(0, 170, 255);
+font: 75 26pt &quot;Bahnschrift&quot;;</string>
+   </property>
+   <property name="text">
+    <string>/</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>130</y>
+     <width>21</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+color: rgb(0, 170, 255);
+font: 75 26pt &quot;Bahnschrift&quot;;</string>
+   </property>
+   <property name="text">
+    <string>=</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_8_error">
@@ -326,25 +223,60 @@ border:1px solid rgb(200, 237, 240);</string>
     <string>00</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_9_success">
+  <widget class="QLineEdit" name="lineEdit_c3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(31, 31, 31);</string>
+   </property>
+   <property name="maxLength">
+    <number>4</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_c1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(31, 31, 31);</string>
+   </property>
+   <property name="maxLength">
+    <number>4</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7_rs">
    <property name="enabled">
     <bool>false</bool>
    </property>
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>60</y>
-     <width>31</width>
+     <x>310</x>
+     <y>170</y>
+     <width>71</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(200, 237, 240);
+    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 background-color:rgb(31, 31, 31);
-border:1px solid rgb(200, 237, 240);</string>
+border:none;
+color: rgb(200, 237, 240);</string>
    </property>
    <property name="text">
-    <string>00</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_4">
@@ -368,15 +300,35 @@ border:1px solid rgb(200, 237, 240);</string>
     <string>Erros</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QLineEdit" name="lineEdit_c5">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>170</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(31, 31, 31);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="maxLength">
+    <number>4</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_9_success">
    <property name="enabled">
     <bool>false</bool>
    </property>
    <property name="geometry">
     <rect>
-     <x>280</x>
+     <x>340</x>
      <y>60</y>
-     <width>51</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -386,7 +338,66 @@ background-color:rgb(31, 31, 31);
 border:1px solid rgb(200, 237, 240);</string>
    </property>
    <property name="text">
-    <string>Success</string>
+    <string>00</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>10</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(200, 237, 240);
+background-color:rgb(31, 31, 31);
+border: 1px solid rgb(200, 237, 240);</string>
+   </property>
+   <property name="text">
+    <string>GETTING STARTED DIVISION</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(200, 237, 240);
+background-color:rgb(31, 31, 31);
+border: 1px solid rgb(200, 237, 240);;</string>
+   </property>
+   <property name="text">
+    <string>&lt;-</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_c2">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>120</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(31, 31, 31);</string>
+   </property>
+   <property name="maxLength">
+    <number>4</number>
    </property>
   </widget>
  </widget>
