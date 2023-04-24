@@ -53,6 +53,7 @@ void form3::on_pushButton_3_clicked()
 {
     MainWindow *f2 = new MainWindow;
     f2->show();
+    close();
 }
 
 

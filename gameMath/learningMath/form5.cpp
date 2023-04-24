@@ -80,6 +80,7 @@ void form5::on_pushButton_3_clicked()
 {
     MainWindow *f5 = new MainWindow;
     f5->show();
+    close();
 }
 
 void form5::on_lineEdit_c1_textEdited(float &arg1)

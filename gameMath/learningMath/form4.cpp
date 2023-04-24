@@ -9,7 +9,7 @@ form4::form4(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QMessageBox::about(this,"Help","to solve this level you will need to use real numbers or flotation decimal numbers sometimes");
+    QMessageBox::about(this,"Help","To solve this level you will need to use real numbers or flotation decimal numbers sometimes");
     //initializing level one
     ini_results(vt_values);
     result_Qs.setNum(vt_values.at(0));
@@ -53,6 +53,7 @@ void form4::on_pushButton_3_clicked()
 {
     MainWindow *f4 = new MainWindow;
     f4->show();
+    close();
 }
 
 
